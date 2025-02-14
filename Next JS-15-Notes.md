@@ -52,3 +52,18 @@
 	4️⃣ The full page is then rendered in the browser.
 	
 - Anything written in `layout.tsx` will be visible on every page in the **App Router (`app/` directory)** of Next.js. This is because `layout.tsx` wraps around all `page.tsx` files and persists across different routes.
+
+
+## Nested Routing ->
+
+- Nested routing allows you to create structured and hierarchical routes using folders inside the `app/` directory.
+- Nested routing allows you to organize pages inside folders to create URL structures like `/dashboard/settings` or `/products/123/details`
+- Each subfolder inside `app/` represents a **nested route**, and Next.js **automatically** maps them to the correct URLs.
+- File Structure :
+	app/
+	│── layout.tsx  (Persistent Layout)
+	│── page.tsx  (Home Page → `/`)
+	│── dashboard/
+	│   │── page.tsx  (Dashboard Page → `/dashboard`)
+	│   └── settings/
+	│       └── page.tsx  (Dashboard Settings → `/dashboard/settings`)
