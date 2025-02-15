@@ -67,3 +67,11 @@
 	│   │── page.tsx  (Dashboard Page → `/dashboard`)
 	│   └── settings/
 	│       └── page.tsx  (Dashboard Settings → `/dashboard/settings`)
+
+
+
+## Linking Component ->
+
+- `<Link>` is used for client-side routing
+- it enables fast, seamless navigation between pages without triggering full page reloads
+- `<Link>` is a React component that extends the HTML `<a>` element to provide prefetching and client-side navigation between routes.
