@@ -72,6 +72,11 @@
 
 ## Linking Component ->
 
-- `<Link>` is used for client-side routing
+- Link is used for client-side routing
 - it enables fast, seamless navigation between pages without triggering full page reloads
 - `<Link>` is a React component that extends the HTML `<a>` element to provide prefetching and client-side navigation between routes.
+
+## Image Component ->
+
+- image component is the `next/img` component for optimized image rendering
+- it automatically handles lazy loading, responsive image and better performance compared to standard `<img>` tag

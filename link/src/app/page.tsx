@@ -1,8 +1,11 @@
+import Hero from '@/components/hero'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='text-2xl font-semibold text-center'>Home Page</div>
+    <div>
+      <Hero />
+    </div>
   )
 }
 
