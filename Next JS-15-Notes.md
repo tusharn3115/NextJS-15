@@ -80,3 +80,36 @@
 
 - image component is the `next/img` component for optimized image rendering
 - it automatically handles lazy loading, responsive image and better performance compared to standard `<img>` tag
+
+
+## CSR / SSR ->
+
+- csr - client side rendering
+- ssr - server side rendering
+##### CSR (Client Side Rendering) -> 
+- the pages are rendered in the browser
+- when to use client side rendering -
+	- for dynamic web pages that doesn't need seo
+	- when the data is not needed to be fetched on every request
+- in nextjs whenever a page is csr we need to use a directive "use client" at the top of the file to let nextjs know that this file is to be use client side rendering because every file in nextjs is by default server side rendering (ssr)
+- - **Pros**: 
+	✅ Faster initial load (for static content).  
+    ✅ Good for highly interactive pages.  
+- **Cons**: 
+	❌ Slower time-to-content (fetching happens on the client).  
+    ❌ Bad for SEO (content is loaded after JavaScript execution).
+
+##### SSR (Server Side Rendering) ->
+- The page is rendered on the server on every request, and the HTML is sent fully populated i.e when the html page is fully loaded then only the page is sent
+- when to use server side rendering -
+	- when seo is required
+	- when frequent updation of data is needed
+	- when you want dynamic content but don't want it to load at client side
+- - **Pros**: 
+	✅ Fresh data on every request.  
+    ✅ Great for SEO.  
+    ✅ No need to fetch data on the client side.
+    
+- **Cons**: 
+	❌ Slower than CSR (server must generate page for every request).  
+    ❌ Increases server load.
