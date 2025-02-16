@@ -105,7 +105,7 @@
 	- when seo is required
 	- when frequent updation of data is needed
 	- when you want dynamic content but don't want it to load at client side
-- - **Pros**: 
+-  **Pros**: 
 	✅ Fresh data on every request.  
     ✅ Great for SEO.  
     ✅ No need to fetch data on the client side.
