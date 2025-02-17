@@ -6,6 +6,7 @@
 
 - provide full stack capabilities 
 - server-side rendering ( SSR )
+- 
 - static site generation ( SSG )
 - API routes, enabling you to build both frontend and backend in one framework
 
@@ -104,7 +105,7 @@
 	- when seo is required
 	- when frequent updation of data is needed
 	- when you want dynamic content but don't want it to load at client side
--  **Pros**: 
+- - **Pros**: 
 	✅ Fresh data on every request.  
     ✅ Great for SEO.  
     ✅ No need to fetch data on the client side.
@@ -112,3 +113,21 @@
 - **Cons**: 
 	❌ Slower than CSR (server must generate page for every request).  
     ❌ Increases server load.
+
+
+## Server Actions ->
+
+- server actions allows use to run server-side logic without creating a separate api route
+- we can directly call a server function from a react component
+- key benefits : 
+	1. no need for api routes
+	2. improved performance 
+	3. direct access to database and backend logics 
+	4. works on both client and server side components
+	5. secure
+
+
+## Dynamic Routes / Slug
+
+- dynamic routes are created where the URL can changed dynamically based on parameters
+- we can create dynamic routes by adding square brackets `[param]` inside page directory
