@@ -15,7 +15,7 @@ const SnippetDetailsPage = async ({
     },
   });
 
-  if (!snippet)
+  if (!snippet) return
     <h1 className="text-sm text-red-500 text-center">Snippet not found</h1>;
 
   return (
