@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 import React from "react";
 import * as action from "@/action"
+import { notFound } from "next/navigation";
 
 const SnippetDetailsPage = async ({
   params,
@@ -16,8 +17,7 @@ const SnippetDetailsPage = async ({
     },
   });
 
-  if (!snippet) return
-    <h1 className="text-sm text-red-500 text-center">Snippet not found</h1>;
+  if (!snippet) if (!snippet) notFound();
 
   const deleteSnippetAction = action.deleteSnippet.bind(null, snippet.id);
 
