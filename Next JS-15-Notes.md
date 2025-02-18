@@ -126,6 +126,8 @@
 	4. works on both client and server side components
 	5. secure
 
+* * Note you cannot create an inline server action inside a client-side component or in the file where you have used "use client" directive
+
 
 ## Dynamic Routes / Slug
 
