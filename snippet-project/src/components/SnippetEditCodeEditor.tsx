@@ -27,7 +27,7 @@ const SnippetEditCodeEditor = ({ snippet }: { snippet: Snippets }) => {
       </form>
       
       <Editor 
-        height="40vh" 
+        height="70vh" 
         defaultLanguage="javascript" 
         defaultValue={code} 
         onChange={changeEventHandler}
