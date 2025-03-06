@@ -6,7 +6,6 @@
 
 - provide full stack capabilities 
 - server-side rendering ( SSR )
-- 
 - static site generation ( SSG )
 - API routes, enabling you to build both frontend and backend in one framework
 
